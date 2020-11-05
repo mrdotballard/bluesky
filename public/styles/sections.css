@@ -1,4 +1,10 @@
 
+/* buttons */
+.copy .btn {
+  background-color: #84acc5 !important;
+  width: 30%;
+  border: none;
+}
 .img {
   min-height: 60vh;
   background-size: cover;
@@ -9,6 +15,7 @@
 .copy {
   font-family: VWText;
   padding: 2rem;
+
 }
 .copy h2 {
   font-weight: bold;
@@ -22,6 +29,7 @@
 .copy p {
   max-width: 80%;
   font-size: 1.2rem;
+  padding: 1em 0;
 }
 hr {
   height: 2px;
@@ -38,7 +46,12 @@ hr {
 /* SAFETY SECTION */
 .safety-img {
   background-image: url("../images/safety1.jpg");
-
+}
+.safety-copy {
+  text-align: right;
+}
+.safety-copy p {
+  margin-left: 20%;
 }
 
 /* SAFETY SECTION */
@@ -50,12 +63,16 @@ hr {
 /* STYLE SECTION */
 .style-img {
   background-image: url("../images/style.jpg");
-
 }
-
+.style-copy {
+  text-align: right;
+}
+.style-copy p {
+  margin-left: 20%;
+}
 /* CTA SECTION */
 .cta {
-  
+
 }
 @media (max-width: 720px) {
 
