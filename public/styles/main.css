@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'VWHead';
+  src: url('../fonts/VWHead.eot');
+  src: url('../fonts/VWHead.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/VWHead.svg#VWHead') format('svg'),
+       url('../fonts/VWHead.ttf') format('truetype'),
+       url('../fonts/VWHead.woff') format('woff'),
+       url('../fonts/VWHead.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VWText';
+  src: url('../fonts/VWText.eot');
+  src: url('../fonts/VWText.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/VWText.svg#VWText') format('svg'),
+       url('../fonts/VWText.ttf') format('truetype'),
+       url('../fonts/VWText.woff') format('woff'),
+       url('../fonts/VWText.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* =========================================== */
+
+body {
+  margin: 0;
+  overflow: hidden;
+}

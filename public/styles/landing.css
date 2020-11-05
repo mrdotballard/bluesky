@@ -1,0 +1,124 @@
+.landing {
+  min-height: 100vh;
+  background-image: url("../images/landing-dark.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  font-family: VWText;
+}
+.landing-blurb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  color: white;
+  font-family: "VWText";
+  font-size: 4em;
+  max-width: 3em;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1em;
+  padding-left: 5px;
+  border-left: 1px solid white;
+
+}
+.landing-blurb span:first-child {
+  color: #84acc5;
+}
+.landing-blurb span:nth-child(2) {
+}
+/* overall wrapper  of each info target */
+.target {
+  position: absolute;
+  display: flex;
+  font-size: 2em;
+}
+
+.target-outer {
+  display: inline-block;
+  position: absolute;
+  height: 4vw;
+  width: 4vw;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.target-inner {
+  position: absolute;
+  height: 3vw;
+  width: 3vw;
+  border: 2px solid white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* margin-top: -1.75vw;
+  margin-left: -1.75vw; */
+}
+.target-dot {
+  height: 1.5vw;
+  width: 1.5vw;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* margin-top: -1vw;
+  margin-left: -1vw; */
+}
+
+/* -------------- 
+  TARGET COPY STYLES
+-----------------------*/
+
+.target > span:first-child {
+  display: inline-block;
+  transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  color: rgb(211, 211, 211, 0.6);
+}
+.target-hover {
+  /* font-size: 3em; */
+  transform: scale(2, 2);
+  color: rgb(255, 255, 255, 1) !important;
+}
+/* SUSTAINABILITY TARGET */
+#eco-target > span:first-child {
+  position: relative;
+  right: 3em;
+  bottom: 3em;
+}
+
+/* SAFETY TARGET */
+#safety-target > span:first-child {
+  position: relative;
+  right: 3em;
+  bottom: 3em;
+}
+
+/* TECHNOLOGY TARGET */
+#tech-target > span:first-child {
+  position: relative;
+  left: 4em;
+  bottom: 2em;
+}
+
+/* STYLE TARGET */
+#style-target > span:first-child {
+  position: relative;
+  left: 4.5em;
+  bottom: 2em;
+}
+
+/* -------------- 
+  TARGET ICON STYLES
+-----------------------*/
+
+@media (max-width: 1170px) {
+  .landing {
+  }
+}
