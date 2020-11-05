@@ -25,6 +25,26 @@
 /* =========================================== */
 
 body {
+  font-family: VWText;
   margin: 0;
-  overflow: hidden;
+  /* scroll-behavior: smooth; */
+  /* overflow: hidden; */
+}
+
+svg {
+  width: 2em;
+  height: auto;
+}
+
+/* navbar */
+.testdrive-btn {
+  padding: 0.1rem 0.3rem !important;
+  background-color: #84acc5 !important;
+}
+
+
+/* footer */
+footer {
+  min-height: 30vh;
+  background-color: #343a40;
 }

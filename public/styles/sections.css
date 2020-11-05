@@ -1,0 +1,62 @@
+
+.img {
+  min-height: 60vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-family: VWText;
+}
+.copy {
+  font-family: VWText;
+  padding: 2rem;
+}
+.copy h2 {
+  font-weight: bold;
+}
+.copy h2 span {
+  color: #84acc5;
+  font-weight: lighter;
+  padding-left: 1rem;
+  word-wrap: none;
+}
+.copy p {
+  max-width: 80%;
+  font-size: 1.2rem;
+}
+hr {
+  height: 2px;
+  width: 80%;
+  color: lightblue;
+}
+/* ECO SECTION */
+.eco-img {
+  background-image: url("../images/eco.jpg");
+
+}
+
+
+/* SAFETY SECTION */
+.safety-img {
+  background-image: url("../images/safety1.jpg");
+
+}
+
+/* SAFETY SECTION */
+.tech-img {
+  background-image: url("../images/technology1.jpg");
+
+}
+
+/* STYLE SECTION */
+.style-img {
+  background-image: url("../images/style.jpg");
+
+}
+
+/* CTA SECTION */
+.cta {
+  
+}
+@media (max-width: 720px) {
+
+}

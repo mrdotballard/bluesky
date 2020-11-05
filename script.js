@@ -23,7 +23,7 @@ function updatePointer() {
   image = { width: $(window).width(), height: $(window).height() };
   ecoPosition = { x: ($(window).width() * 0.21), y: ($(window).height() * 0.56) };
   safetyPosition = { x: $(window).width() * 0.3, y: $(window).height() * 0.3 };
-  techPosition = { x: $(window).width() * 0.6, y: $(window).height() * 0.2 };
+  techPosition = { x: $(window).width() * 0.7, y: $(window).height() * 0.35 };
   stylePosition = { x: $(window).width() * 0.6, y: $(window).height() * 0.7 };
 
   var windowWidth = $(window).width();
@@ -63,4 +63,26 @@ function updatePointer() {
  */
 $(".target-outer").hover(function() {
   $(this).prev().toggleClass("target-hover");
+});
+
+// Add smooth scrolling to all links
+$(".target-outer").on('click', function(event) {
+
+  // Make sure this.hash has a value before overriding default behavior
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = $(this).attr('data-hash');
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top - 66
+    }, 800, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      // window.location.hash = hash;
+
+    });
 });
