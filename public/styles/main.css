@@ -1,4 +1,11 @@
-
+/*
+Styles set for: 
+- global styles
+- to-top tab
+- navbar logo and testdrive btn
+- footer
+> 
+*/
 
 @font-face {
   font-family: 'VWText';
@@ -36,21 +43,19 @@ body {
   color: white;
   cursor: pointer;
 }
-svg {
-  width: 2em;
-  height: auto;
-}
+
 
 /* navbar */
 .testdrive-btn {
   padding: 0.1rem 0.3rem !important;
   background-color: #84acc5 !important;
 }
-
+svg {
+  width: 2em;
+  height: auto;
+}
 
 /* footer */
-
-
 .footer-wrap {
   min-height: 30vh;
   padding: 2em 0;

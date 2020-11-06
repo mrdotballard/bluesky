@@ -21,11 +21,11 @@
     <link rel="stylesheet" href="public/styles/main.css" />
     <link rel="stylesheet" href="public/styles/landing.css" />
     <link rel="stylesheet" href="public/styles/sections.css" />
-    <title>Document</title>
+    <title>VW e-Golf</title>
   </head>
   <body>
+    <!-- TOP NAV BAR -->
     <nav class="navbar navbar-expand-sm fixed-top bg-dark navbar-dark">
-      <!-- <div class="container-fluid"> -->
       <a href="#" class="navbar-brand"
         ><svg
           title="Volkswagen"
@@ -70,138 +70,141 @@
         </ul>
         <button type="button" class="btn testdrive-btn">Test drive</button>
       </div>
-      <!-- </div> -->
     </nav>
 
+    <!-- TO-TOP TAB FIXED TO BOTTOM/CENTER -->
     <div id="to-top">
       <span>top</span>
     </div>
-    <div>
-      <section class="landing container-fluid">
-        <div class="resp-links">
-          <span>SELECT</span>
-          <a data-hash="#eco">sustainability</a>
-          <a data-hash="#safety">safety</a>
-          <a data-hash="#tech">technology</a>
-          <a data-hash="#style">style</a>
-        </div>
-        <div class="landing-blurb">
-          <span>e-Golf</span>
-          <span>Drive the future, today.</span>
-        </div>
 
-        <div class="target" id="eco-target">
-          <span>sustainability</span>
-          <span class="target-outer" data-hash="#eco">
-            <span class="target-inner">
-              <span class="target-dot"></span>
-            </span>
+    <!-- LANDING PAGE SECTION - all targets/links -->
+    <section class="landing container-fluid">
+      <!-- resp-links are the links for the page sections displayed only on smaller screens (i.e. no targets/animations) -->
+      <div class="resp-links">
+        <span>SELECT</span>
+        <a data-hash="#eco">sustainability</a>
+        <a data-hash="#safety">safety</a>
+        <a data-hash="#tech">technology</a>
+        <a data-hash="#style">style</a>
+      </div>
+
+      
+      <div class="landing-blurb">
+        <span>e-Golf</span>
+        <span>Drive the future, today.</span>
+      </div>
+
+      <div class="target" id="eco-target">
+        <span>sustainability</span>
+        <span class="target-outer" data-hash="#eco">
+          <span class="target-inner">
+            <span class="target-dot"></span>
           </span>
-        </div>
+        </span>
+      </div>
 
-        <div class="target" id="safety-target">
-          <span>safety</span>
-          <span class="target-outer" data-hash="#safety">
-            <span class="target-inner">
-              <span class="target-dot"></span>
-            </span>
+      <div class="target" id="safety-target">
+        <span>safety</span>
+        <span class="target-outer" data-hash="#safety">
+          <span class="target-inner">
+            <span class="target-dot"></span>
           </span>
-        </div>
+        </span>
+      </div>
 
-        <div class="target" id="tech-target">
-          <span>technology</span>
-          <span class="target-outer" data-hash="#tech">
-            <span class="target-inner">
-              <span class="target-dot"></span>
-            </span>
+      <div class="target" id="tech-target">
+        <span>technology</span>
+        <span class="target-outer" data-hash="#tech">
+          <span class="target-inner">
+            <span class="target-dot"></span>
           </span>
-        </div>
+        </span>
+      </div>
 
-        <div class="target" id="style-target">
-          <span id="styleId">style</span>
-          <span class="target-outer" data-hash="#style">
-            <span class="target-inner">
-              <span class="target-dot"></span>
-            </span>
+      <div class="target" id="style-target">
+        <span id="styleId">style</span>
+        <span class="target-outer" data-hash="#style">
+          <span class="target-inner">
+            <span class="target-dot"></span>
           </span>
-        </div>
-      </section>
-      <!-- end of leanding section -->
+        </span>
+      </div>
+    </section>
 
-      <!-- ECO SECTION -->
-      <section id="eco" class="eco-container container-fluid">
-        <div class="row">
-          <div class="col-lg-8 img eco-img"></div>
-          <div class="col-lg-4 copy eco-copy">
-            <h2>Sustainability <span>for the future</span></h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
-              facilis dolor, et laborum ipsa debitis accusamus amet mollitia
-              quidem similique! Illo reprehenderit totam iure inventore commodi
-              distinctio reiciendis saepe excepturi!
-            </p>
-            <div class="btn btn-primary">Expore</div>
-          </div>
+    <!-- ECO SECTION -->
+    <section id="eco" class="eco-container container-fluid">
+      <div class="row">
+        <div class="col-lg-8 img eco-img"></div>
+        <div class="col-lg-4 copy eco-copy">
+          <h2>Sustainability <span>for the future</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
+            facilis dolor, et laborum ipsa debitis accusamus amet mollitia
+            quidem similique! Illo reprehenderit totam iure inventore commodi
+            distinctio reiciendis saepe excepturi!
+          </p>
+          <div class="btn btn-primary">Expore</div>
         </div>
-      </section>
-      <hr />
+      </div>
+    </section>
+    <hr />
 
-      <!-- SAFETY SECTION -->
-      <section id="safety" class="safety-container container-fluid">
-        <div class="row flex-column-reverse flex-lg-row">
-          <div class="col-lg-4 copy safety-copy">
-            <h2>Safety <span>our priority</span></h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
-              facilis dolor, et laborum ipsa debitis accusamus amet mollitia
-              quidem similique! Illo reprehenderit totam iure inventore commodi
-              distinctio reiciendis saepe excepturi!
-            </p>
-            <div class="btn btn-primary">Expore</div>
-          </div>
-          <div class="col-lg-8 img safety-img"></div>
+    <!-- SAFETY SECTION -->
+    <section id="safety" class="safety-container container-fluid">
+      <div class="row flex-column-reverse flex-lg-row">
+        <div class="col-lg-4 copy safety-copy">
+          <h2>Safety <span>our priority</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
+            facilis dolor, et laborum ipsa debitis accusamus amet mollitia
+            quidem similique! Illo reprehenderit totam iure inventore commodi
+            distinctio reiciendis saepe excepturi!
+          </p>
+          <div class="btn btn-primary">Expore</div>
         </div>
-      </section>
-      <hr />
+        <div class="col-lg-8 img safety-img"></div>
+      </div>
+    </section>
+    <hr />
 
-      <!-- TECH SECTION -->
-      <section id="tech" class="tech-container container-fluid">
-        <div class="row">
-          <div class="col-lg-8 img tech-img"></div>
-          <div class="col-lg-4 copy tech-copy">
-            <h2>Technology <span>cutting edge</span></h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
-              facilis dolor, et laborum ipsa debitis accusamus amet mollitia
-              quidem similique! Illo reprehenderit totam iure inventore commodi
-              distinctio reiciendis saepe excepturi!
-            </p>
-            <div class="btn btn-primary">Expore</div>
-          </div>
+    <!-- TECH SECTION -->
+    <section id="tech" class="tech-container container-fluid">
+      <div class="row">
+        <div class="col-lg-8 img tech-img"></div>
+        <div class="col-lg-4 copy tech-copy">
+          <h2>Technology <span>cutting edge</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
+            facilis dolor, et laborum ipsa debitis accusamus amet mollitia
+            quidem similique! Illo reprehenderit totam iure inventore commodi
+            distinctio reiciendis saepe excepturi!
+          </p>
+          <div class="btn btn-primary">Expore</div>
         </div>
-      </section>
-      <hr />
-      <!-- STYLE SECTION -->
-      <section id="style" class="style-container container-fluid">
-        <div class="row flex-column-reverse flex-lg-row">
-          <div class="col-lg-4 copy style-copy">
-            <h2>Style <span>we turn heads</span></h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
-              facilis dolor, et laborum ipsa debitis accusamus amet mollitia
-              quidem similique! Illo reprehenderit totam iure inventore commodi
-              distinctio reiciendis saepe excepturi!
-            </p>
-            <div class="btn btn-primary">Expore</div>
-          </div>
-          <div class="col-lg-8 img style-img"></div>
+      </div>
+    </section>
+    <hr />
+
+    <!-- STYLE SECTION -->
+    <section id="style" class="style-container container-fluid">
+      <div class="row flex-column-reverse flex-lg-row">
+        <div class="col-lg-4 copy style-copy">
+          <h2>Style <span>we turn heads</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
+            facilis dolor, et laborum ipsa debitis accusamus amet mollitia
+            quidem similique! Illo reprehenderit totam iure inventore commodi
+            distinctio reiciendis saepe excepturi!
+          </p>
+          <div class="btn btn-primary">Expore</div>
         </div>
-      </section>
+        <div class="col-lg-8 img style-img"></div>
+      </div>
+    </section>
 
-      <!-- end of main page container -->
-    </div>
+    <!-- end of main page sections -->
 
-    <hr>
+    <hr />
     <!-- CTA section -->
     <div class="cta-wrap">
       <div class="interest">
@@ -227,8 +230,7 @@
       </div>
     </div>
 
-    <!-- footer -->
-    <!-- <footer class=""> -->
+    <!-- FOOTER -->
     <div class="footer-wrap">
       <div class="footer-logo">
         <svg
@@ -272,7 +274,6 @@
         </ul>
       </div>
     </div>
-    <!-- </footer> -->
-    <script src="script.js"></script>
+    <script src="public/scripts/script.js"></script>
   </body>
 </html>

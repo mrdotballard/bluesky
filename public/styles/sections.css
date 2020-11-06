@@ -1,10 +1,11 @@
 
-/* buttons */
+/* sections buttons */
 .copy .btn {
   background-color: #84acc5 !important;
   width: 7em;
   border: none;
 }
+/* ALL SECTION STYLES */
 .img {
   min-height: 60vh;
   background-size: cover;
@@ -36,12 +37,11 @@ hr {
   width: 80%;
   color: lightblue;
 }
+
 /* ECO SECTION */
 .eco-img {
   background-image: url("../images/eco.jpg");
-
 }
-
 
 /* SAFETY SECTION */
 .safety-img {
@@ -57,7 +57,6 @@ hr {
 /* SAFETY SECTION */
 .tech-img {
   background-image: url("../images/technology1.jpg");
-
 }
 
 /* STYLE SECTION */
@@ -90,6 +89,7 @@ hr {
 .cta-wrap a {
   color: #77a7c5 !important;
 }
+
 @media (max-width: 576px) {
   .img {
     min-height: 20vh;
