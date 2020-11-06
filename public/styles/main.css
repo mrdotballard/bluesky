@@ -44,7 +44,41 @@ svg {
 
 
 /* footer */
-footer {
+
+
+.footer-wrap {
   min-height: 30vh;
+  padding: 2em 0;
   background-color: #343a40;
+  color: #fff ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-logo svg {
+  width: 8em;
+  height: auto;
+}
+.footer-legal {
+  max-width: 30%;
+  text-align: center;
+  padding-bottom: 0 !important;
+}
+.footer-menu a {
+  text-decoration: underline;
+  color: #fff;
+}
+@media (max-width: 540px) {
+  .footer-wrap {
+    flex-direction: column;
+    /* align-content: ; */
+  }
+  .footer-wrap div {
+    padding: 1em 0;
+  }
+  .footer-legal {
+    max-width: 80%;
+  }
+
 }

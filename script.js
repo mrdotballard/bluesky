@@ -65,6 +65,22 @@ $(".target-outer").hover(function() {
   $(this).prev().toggleClass("target-hover");
 });
 
+// document.querySelectorAll(".target-outer").forEach(element => {
+//    element.addEventListener("mouseover", function(event) {
+//     element.style.borderBottomColor = 'transparent';
+//     element.classList.add("outer-spinner");
+//    });
+// });
+
+
+$(".target-outer").hover(function() {
+  // $(this).next().css("border-bottom-color", "transparent");
+  // $(this).css('border-bottom-color', 'transparent');
+  // $(this).next().css('border-bottom-color', 'transparent');
+  // $(this).children(0).toggleClass("inner-spinner");
+  $(this).toggleClass("outer-spinner");
+});
+
 // Add smooth scrolling to all links
 $(".target-outer").on('click', function(event) {
 
