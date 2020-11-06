@@ -31,6 +31,21 @@ body {
   /* overflow: hidden; */
 }
 
+#to-top {
+  background-color: #84acc5;
+  border-radius: 10px 10px 0 0;
+  width: 3em;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  display: inline-block;
+  z-index: 999;
+  text-align: center;
+  height: 1.5em;
+  transform: translateX(-50%);
+  color: white;
+  cursor: pointer;
+}
 svg {
   width: 2em;
   height: auto;
@@ -69,7 +84,7 @@ svg {
   text-decoration: underline;
   color: #fff;
 }
-@media (max-width: 540px) {
+@media (max-width: 576px) {
   .footer-wrap {
     flex-direction: column;
     /* align-content: ; */

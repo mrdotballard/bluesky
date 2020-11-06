@@ -71,9 +71,29 @@ hr {
   margin-left: 20%;
 }
 /* CTA SECTION */
-.cta {
-
+.cta-wrap {
+  background-image: url("../images/customer1.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: auto;
+  display: flex;
+  padding: 1em;
+  text-align: center;
 }
-@media (max-width: 720px) {
+.cta-wrap div {
+  margin: 1em;
+}
+.cta-wrap p {
+  width: 80%;
+  margin: auto;
+}
+@media (max-width: 576px) {
+  .img {
+    min-height: 20vh;
+    background-position: center;
+  }
 
+  .cta-wrap {
+    flex-direction: column;
+  }
 }

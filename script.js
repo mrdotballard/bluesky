@@ -16,7 +16,6 @@ let styleTarget= $("#style-target");
 
 $(document).ready(updatePointer);
 
-
 $(window).resize(updatePointer);
 
 function updatePointer() {
@@ -54,51 +53,52 @@ function updatePointer() {
   techTarget.css("left", techPosition.x * scale + xOffset);
   styleTarget.css("top", stylePosition.y * scale + yOffset);
   styleTarget.css("left", stylePosition.x * scale + xOffset);
-
 }
 
 
-/**
- * Setup landing page target listeners
- */
+
+ //Setup landing page target listeners
 $(".target-outer").hover(function() {
   $(this).prev().toggleClass("target-hover");
 });
 
-// document.querySelectorAll(".target-outer").forEach(element => {
-//    element.addEventListener("mouseover", function(event) {
-//     element.style.borderBottomColor = 'transparent';
-//     element.classList.add("outer-spinner");
-//    });
-// });
-
-
+// add spinning animation on landing targets
 $(".target-outer").hover(function() {
-  // $(this).next().css("border-bottom-color", "transparent");
-  // $(this).css('border-bottom-color', 'transparent');
-  // $(this).next().css('border-bottom-color', 'transparent');
-  // $(this).children(0).toggleClass("inner-spinner");
   $(this).toggleClass("outer-spinner");
 });
 
-// Add smooth scrolling to all links
-$(".target-outer").on('click', function(event) {
+// Add smooth scrolling to all landing target links
+$(".target-outer").on('click', smoothScroll);
+$(".resp-links a").on('click', smoothScroll); //for small screens
 
-  // Make sure this.hash has a value before overriding default behavior
-    // Prevent default anchor click behavior
+function smoothScroll(event) {
     event.preventDefault();
 
     // Store hash
     var hash = $(this).attr('data-hash');
 
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
     $('html, body').animate({
       scrollTop: $(hash).offset().top - 66
     }, 800, function(){
 
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      // window.location.hash = hash;
-
     });
-});
+}
+
+// scroll to top tag
+let topTag = document.getElementById("to-top");
+topTag.addEventListener("click", topFunction);
+window.onscroll = function() {scrollFunction()};
+
+// only display tag if page is scrolled
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topTag.style.display = "block";
+  } else {
+    topTag.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

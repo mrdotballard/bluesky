@@ -163,20 +163,47 @@
   }
 
   .landing-blurb {
-    left  : 70%
+    left  : 80%
   }
-
+  .resp-links span {
+    color:#fff;
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
   .resp-links {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+  }
+  .resp-links a {
+    display: block;
+    color: rgb(211, 211, 211, 0.8) !important;
+    font-size: 3em;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1em;
     
+  }
+  .resp-links a:hover {
+    color: #fff !important;
   }
 }
 
 @media (max-width: 576px) {
   .landing{
-    background-image: url("../images/mobile-img1.jpg");
+    background-image: url("../images/mobile-img2.jpg");
+    background-position: top;
   }
   .landing-blurb {
     left: 50%;
-    top: 45%;
+    top: 44%;
+    font-size: 3.5em
+  }
+  .resp-links {
+    top: 60%;
+    left: 50%;
+    transform: translatex(-50%)
   }
 }
